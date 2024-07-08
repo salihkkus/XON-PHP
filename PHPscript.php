@@ -6,7 +6,7 @@
  - Yaş pozitif bir tam sayı olmalıdır.
  - Başarılı gönderim veya doğrulama hataları için uygun mesajları görüntüleyin. */
 
- 
+
  if(isset($_POST['name']) && isset($_POST['email'])) {
     $name = $_POST['name'];
     $sifre = $_POST['email'];
@@ -33,7 +33,7 @@
 <input type = "text" id = "email" name = "email"><br>
 
 <label for = "yas">Kullanıcı Yaşı:</label><br>
-<input type = "number" id = "yas" name = "yas"><br>
+<input type = "number" id = "yas" name = "yas" min = "0"  max = "100"><br>
 
 <label for = "onay">Onayla:</label><br>
 <input type = "submit" id = "onay" name = "yas"><br>
