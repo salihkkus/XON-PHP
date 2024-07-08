@@ -8,7 +8,7 @@ fwrite($dosyam , $txt);
 $txt = "Şu anda XON şirketınde stajyer olarak çalışmaktayım";
 fwrite($dosyam , $txt);
 
-fread($dosyam , filesize("phpdosyam.txt"));
+fread($dosyam , ("phpdosyam.txt"));
 fclose($dosyam);
 
 echo readfile("phpdosyam.txt")
