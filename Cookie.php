@@ -19,7 +19,7 @@ session_destroy();
 
 setcookie("temamodu", "KaranlıkTema",  time() +30 * 24 * 60 * 60);
 
-$Karanlikmod = $_COOKIE["temamodu"] == "true";
+$Karanlikmod = $_COOKIE['temamodu'] == "true";
 
 if($Karanlikmod)
 {
