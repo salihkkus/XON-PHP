@@ -8,9 +8,7 @@
 
 
  if(empty($_POST["name"]) && empty($_POST["email"])) {
-    $name = $_POST["name"];
-    $sifre = $_POST["email"];
-      
+
     if(empty($name) || empty($email)) {
        echo "Lütfen boş bırakmayın";
     } else {
