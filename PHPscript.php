@@ -22,16 +22,16 @@
 <html>
 <body>
 
-<form action="PHPscript" method="post"><br>
+<form action="PHPscript.php" method="post"><br>
 
 <label for = "name">Kullanıcı Adı: </label><br>
-<input type = "text" id = "name" name = "name"><br>
+<input type = "text" id = "name" name = "name" value = "salihkarakus"><br>
 
 <label for = "email">E-Posta: </label><br>
-<input type = "text" id = "email" name = "email"><br>
+<input type = "text" id = "email" name = "email" value = "abc@gmail.com"><br>
 
 <label for = "yas">Kullanıcı Yaşı: </label><br>
-<input type = "number" id = "yas" name = "yas" min = "0"  max = "100"><br>
+<input type = "number" id = "yas" name = "yas" min = "0"  max = "100" value = "20"><br>
 
 <label for = "onay">Onayla: </label><br>
 <input type = "submit" id = "onay" name = "yas"><br>
