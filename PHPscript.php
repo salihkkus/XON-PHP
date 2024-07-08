@@ -7,17 +7,18 @@
  - Başarılı gönderim veya doğrulama hataları için uygun mesajları görüntüleyin. */
 
 
- if(isset($_POST['name']) && isset($_POST['email'])) {
-    $name = $_POST['name'];
-    $sifre = $_POST['email'];
+ if(empty($_POST["name"]) && empty($_POST["email"]) && empty($_POST["yas"])) {
+    $name = $_POST["name"];
+    $sifre = $_POST["email"];
+    $yas = $_POST["yas"];
   
-    if(empty($name) || empty($email)) {
-       echo 'Lütfen boş bırakmayın';
+    if(empty($name) || empty($email) || empty($yas)) {
+       echo "Lütfen boş bırakmayın";
     } else {
-       echo 'Girilen kullanıcı adı: ' . $name . ' şifre: ' . $email;
+       echo "Girilen kullanıcı adı: " . $name . " şifre: " . $email . "yaş:" . $yas;
     }
  } else {
-    echo 'Lütfen formu kullanın';
+    echo "Lütfen formu kullanın";
  }
 ?>
 
