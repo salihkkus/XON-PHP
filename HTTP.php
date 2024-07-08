@@ -1,12 +1,12 @@
 <?php
 
-// Form İşleme ve Doğrulama: Form işleme ve doğrulamayı gösteren bir PHP betiği oluşturun:
+/* - Form Handling and Validation: Create a PHP script that demonstrates form handling and validation:
+  - Design an HTML form with fields for name, email, and age.*/
 
 ?>
 
 <html>
 <body>
-
 
 <form>
 
@@ -23,7 +23,6 @@
 <input type="submit" name = onay value="Onayla">
 
 </form>
-
 
 </body>
 </html>
