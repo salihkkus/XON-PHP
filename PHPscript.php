@@ -7,12 +7,12 @@
  - Başarılı gönderim veya doğrulama hataları için uygun mesajları görüntüleyin. */
 
 
- if(empty($_POST["name"]) && empty($_POST["email"]) && empty($_POST["yas"])) {
+ if(empty($_POST["name"]) && empty($_POST["email"])) {
     $name = $_POST["name"];
     $sifre = $_POST["email"];
     $yas = $_POST["yas"];
   
-    if(empty($name) || empty($email) || empty($yas)) {
+    if(empty($name) || empty($email)) {
        echo "Lütfen boş bırakmayın";
     } else {
        echo "Girilen kullanıcı adı: " . $name . " şifre: " . $email . "yaş:" . $yas;
