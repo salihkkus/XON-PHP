@@ -9,9 +9,9 @@ session_start();
 
 $_SESSION['kullanici adi'] = "Salih";
 
-$kullanici = $_SESSION['kullanici adi'] = "Salih";
+$kullanici = $_SESSION['kullanici adi'] = "Salih <br>";
 
-echo "Kullanıcı Bilgileri" . $kullanici;
+echo "Kullanıcı Bilgileri <br>" . $kullanici;
 
 session_destroy();
 
@@ -23,11 +23,11 @@ $Karanlikmod = $_COOKIE['temamodu'] == "true";
 
 if($Karanlikmod)
 {
-    echo "Karanlık tema aktif olsun";
+    echo "Karanlık tema aktif olsun <br>";
 }
 else
 {
-    echo "Aydınlık tema açık kalsın";
+    echo "Aydınlık tema açık kalsın <br>";
 } 
 
 ?>
