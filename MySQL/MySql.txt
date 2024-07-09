@@ -1,0 +1,4 @@
+Bu ödevin amacı veritabanı yönetimindeki temel kavramları anlama ve pratik uygulama düzeyinizi değerlendirmektir.
+Temel CRUD işlemlerini gerçekleştirmek için bir MySQL veritabanı oluşturmanız, bir tablo tasarlamanız ve SQL sorguları yazmanız gerekecektir.
+Ayrıca veri bütünlüğünü ve tutarlılığını sağlamak için dizinleri, kısıtlamaları ve ilişkileri uygulamanız gerekecektir.
+Son olarak MySQL'de işlemlerin kullanımını gösteren bir komut dosyası yazmanız istenecektir.
