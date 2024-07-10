@@ -27,32 +27,37 @@ $mysqli = mysqli_connect("localhost", "root", "", "company");
 
 if(mysqli_connect_errno())
 {
-    echo "Bağlantı Başarısız <br>";
+    echo "<h3> Bağlantı Başarısız <?h3><br>";
 }
 
 else 
 {
-    echo "Bağlantı Başarılı <br>";
+    echo "<h3>Bağlantı Başarılı </h3><br>";
 }
 
 
-if($_POST)
-$e_fname = $_POST["fname"];
-$e_lname = $_POST["lname"];
-$e_mail = $_POST["mail"];
-$e_salary = $_POST["salary"];
+if($_POST){
+    $e_fname = $_POST["fname"];
+    $e_lname = $_POST["lname"];
+    $e_mail = $_POST["mail"];
+    $e_salary = $_POST["salary"];
 
+    
+$sql = "INSERT INTO employee (first_name, last_name, email, salary) VALUES('" .$e_fname. "','" .$e_lname. "','" .$e_mail. "','" .$e_salary. "')";
 
-$sql = "insert into employee (first_name, last_name, email, salary) values('" .$e_fname. "','" .$e_lname. "','" .$e_mail. "','" .$e_salary. "')";
-
-if($mysqli->query($sql))
+if($mysqli->query($sql) === true)
 {
-    echo "Kayıt Başarılı";
+    echo "<h3> Kayıt Başarılı </h3>";
 }
 
 else 
 {
-    echo "Kayıt Başarısız";
+    echo "<h3> Kayıt Başarısız </h3>";
+}
+
+
+$mysqli->close();
+
 }
 
 ?>
