@@ -1,0 +1,4 @@
+MySQL de **Occurrence** bir veritabaninda aynı anda gerçekleşebilecek işlemleri işleme yeteneğidir.veritabaninda sorun çıkmaması için occurrence yani eszamanliliga önem vermek gerekir. Bunu içinde bazı stratejiler vardır. Yalıtım düzeyleri ayarlamak, veritabaninin optimizasyonuna dikkat etmek veritabanını doğru bolumlendirip kısımlara ayırmak gibi. 
+Örneğin banka ödeme sistelerinde müşterinin yanlışlıkla arka arkaya iki kez ödeme yapmasını veya almasını önlemek için bu sistem mekanizmaları kullanılır. 
+
+MySQL de **Isolation** bir veritabaninda yapılan işlemlerin birbirinden bağımsız olup birbirini etkilememesidir.Hangi işlemin hangi veriye ne zaman erişebileceği önemli bir husustur. Veriler de herhangi bir probolem ortaya çıkmaması için çeşitli kilitleme mekanizmaları kullanılır.
