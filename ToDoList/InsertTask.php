@@ -9,9 +9,9 @@ if (mysqli_connect_errno() == false) {
 }
 
 if ($_POST) {
-    $taskinsert = $_POST["task"];
+    $taskInsert = $_POST["task"];
 
-    $sql = "INSERT INTO tasks (task) VALUES ('$taskinsert')";
+    $sql = "INSERT INTO tasks (task) VALUES ('$taskInsert')";
 
     if ($mysqli->query($sql) === true) {
         echo "İşlem Başarılı <br>";
