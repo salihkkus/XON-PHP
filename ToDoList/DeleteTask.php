@@ -9,9 +9,9 @@ if (mysqli_connect_errno() == false) {
 }
 
 if ($_POST) {
-    $taskdelete = $_POST["sil"];
+    $taskDelete = $_POST["sil"];
 
-    $sql = "DELETE FROM tasks WHERE task = '$taskdelete'";
+    $sql = "DELETE FROM tasks WHERE task = '$taskDelete'";
 
     if ($mysqli->query($sql) === true) {
         echo "İşlem Başarılı <br>";
