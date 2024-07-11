@@ -22,7 +22,7 @@ if ($_POST) {
     $mysqli->close();
 }
 
-header("Location: Interface.php");
+header("Location: WebPage.php");
 exit();
 
 ?>

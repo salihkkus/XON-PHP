@@ -40,22 +40,24 @@
 <?php
 $mysqli = mysqli_connect("localhost", "root", "", "todo");
 
-if (mysqli_connect_errno() == false) {
-    $result = $mysqli->query("SELECT * FROM tasks");
-
-    if ($result->num_rows > 0) {
-        while ($row = $result->fetch_assoc()) {
-            echo "<li>" . htmlspecialchars($row["task"]) . "</li>";
-        }
-    } else {
-        echo "<li>Görev yok.</li>";
-    }
-
-    $mysqli->close();
-} else {
-    echo "Bağlantı Başarısız: " . mysqli_connect_error();
+if ($mysqli->connect_errno) {
+    echo "Bağlantı Başarısız: " . $mysqli->connect_error;
+    exit();
 }
+
+$result = $mysqli->query("SELECT task FROM tasks");
+
+if ($result->num_rows > 0) {
+    while ($row = $result->fetch_assoc()) {
+        echo "<li>" . htmlspecialchars($row["task"]) . "</li>";
+    }
+} else {
+    echo "<li>Görev yok.</li>";
+}
+
+$mysqli->close();
 ?>
+
 </ul>
 
 </body>
