@@ -1,4 +1,5 @@
--BASICS OF PHP PROGRAMMING LANGUAGE
--Web Development with PHP
--Introduction to MySQL
--PHP and MySQL Integration
+- BASICS OF PHP PROGRAMMING LANGUAGE
+- Web Development with PHP
+- Introduction to MySQL
+- PHP and MySQL Integration
+- Web Development with PHP and JavaScript
