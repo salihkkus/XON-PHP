@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="utf-8">
+    <title>JQuery AJAX</title>
+    <script src="jquery-3.7.1.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+</head>
+
+<body>
+    <div>
+        <h2>Welcome to My JQuery</h2>
+    </div>
+
+    <p id="result"></p>
+
+    <button>Click</button>
+    <script>
+        $(function() {
+            $("button").click(function() {
+                $.post("ajax.php", {
+                        name: "SALIH",
+                        country: "YALOVA"
+                    },
+                    function(data, status) {
+                        $("#result").html("Verimiz: " + data);
+                    });
+            });
+        });
+    </script>
+</body>
+
+</html>
