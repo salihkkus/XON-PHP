@@ -3,3 +3,4 @@
 - Introduction to MySQL
 - PHP and MySQL Integration
 - Web Development with PHP and JavaScript
+- CRUD Application
