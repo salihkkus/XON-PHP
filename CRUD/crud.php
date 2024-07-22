@@ -62,8 +62,8 @@ if ($_SERVER["REQUEST_METHOD"] == "GET" && isset($_GET["action"]) && $_GET["acti
     
         .main-bg {
             position: fixed;
-            top: 80%;
-            left: 82%;
+            top: 79%;
+            left: 80%;
         }
     </style>
     <title>CRUD</title>
@@ -73,7 +73,7 @@ if ($_SERVER["REQUEST_METHOD"] == "GET" && isset($_GET["action"]) && $_GET["acti
 
 
     <h2><i>Kullanıcı Ekle</i></h2>
-    <form action="index.php" method="post">
+    <form action="crud.php" method="post">
         <input type="hidden" name="action" value="create">
         <div class="mb-3">
             <label for="isim" class="form-label">Kullanıcı Adı</label>
@@ -103,7 +103,7 @@ if ($_SERVER["REQUEST_METHOD"] == "GET" && isset($_GET["action"]) && $_GET["acti
         ?>
 
         <h2><i><br>Kullanıcı Güncelle</i></h2>
-        <form action="index.php" method="post">
+        <form action="crud.php" method="post">
             <input type="hidden" name="action" value="update">
             <input type="hidden" name="id" value="<?php echo $row['id']; ?>">
             <div class="mb-3">
