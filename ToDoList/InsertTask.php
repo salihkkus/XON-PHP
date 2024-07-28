@@ -1,5 +1,4 @@
 <?php
-
 $mysqli = mysqli_connect("localhost", "root", "", "todo");
 
 if (mysqli_connect_errno() == false) {
@@ -7,7 +6,6 @@ if (mysqli_connect_errno() == false) {
 } else {
     echo "Bağlantı Başarısız <br>";
 }
-
 if ($_POST) {
     $taskInsert = $_POST["task"];
 
@@ -21,8 +19,6 @@ if ($_POST) {
 
     $mysqli->close();
 }
-
 header("Location: WebPage.php");
 exit();
-
 ?>

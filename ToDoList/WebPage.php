@@ -33,7 +33,6 @@
 
     <br>
 </form>
-
 <h1>Görevler</h1>
 <ul>
     
@@ -59,6 +58,5 @@ $mysqli->close();
 ?>
 
 </ul>
-
 </body>
 </html>

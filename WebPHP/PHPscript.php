@@ -1,12 +1,9 @@
 <?php
-
 /* - Form verilerini işlemek ve doğrulamak için bir PHP betiği yazın:
  - İsim boş olmamalı ve yalnızca alfabetik karakterler içermelidir.
  - E-posta geçerli bir e-posta adresi olmalıdır.
  - Yaş pozitif bir tam sayı olmalıdır.
  - Başarılı gönderim veya doğrulama hataları için uygun mesajları görüntüleyin. */
-
-
  if(empty($_POST["name"]) && empty($_POST["email"])) {
 
     if(empty($name) || empty($email)) {
@@ -21,7 +18,6 @@
 
 <html>
 <body>
-
 <form action="PHPscript.php" method="post"><br>
 
 <label for = "name">Kullanıcı Adı: </label><br>
@@ -35,8 +31,6 @@
 
 <label for = "onay">Onayla: </label><br>
 <input type = "submit" id = "onay" name = "yas"><br>
-
-
 </form>
 </body>
 </html>
